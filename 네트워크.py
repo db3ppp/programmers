@@ -11,7 +11,7 @@ def solution(n, computers):
         visited[x] = True
         
         while bfs:
-            node = bfs.pop(0) #큐에서 꺼내기
+            node = bfs.pop() #큐에서 꺼내기
             visited[node] = True
             for i in range(n):
                 if visited[i] == False and computers[node][i] == 1:#아직 안방문했고, 이어져있는 노드면
