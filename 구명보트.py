@@ -7,7 +7,7 @@ def solution(people, limit):
     j=len(people)-1 #max
     
     while i < j:
-        if people[i] + people[j] <= limit:
+        if people[i] + people[j] <= limit: #가장 큰값과 작은값의 합 부터
             answer += 1
             i += 1
             j -=1
